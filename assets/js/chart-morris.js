@@ -104,52 +104,62 @@ jQuery(function($) {
         var day_data = [{
             "period": "2012-10-01",
             "licensed": 3407,
-            "sorned": 660
+            "sorned": 660,
+            "test": 252
         }, {
             "period": "2012-09-30",
             "licensed": 3351,
-            "sorned": 629
+            "sorned": 629,
+            "test": 252
         }, {
             "period": "2012-09-29",
             "licensed": 3269,
-            "sorned": 618
+            "sorned": 618,
+            "test": 252
         }, {
             "period": "2012-09-20",
             "licensed": 3246,
-            "sorned": 661
+            "sorned": 661,
+            "test": 252
         }, {
             "period": "2012-09-19",
             "licensed": 3257,
-            "sorned": 667
+            "sorned": 667,
+            "test": 252
         }, {
             "period": "2012-09-18",
             "licensed": 3248,
-            "sorned": 627
+            "sorned": 627,
+            "test": 252
         }, {
             "period": "2012-09-17",
             "licensed": 3171,
-            "sorned": 660
+            "sorned": 660,
+            "test": 252
         }, {
             "period": "2012-09-16",
             "licensed": 3171,
-            "sorned": 676
+            "sorned": 676,
+            "test": 252
         }, {
             "period": "2012-09-15",
             "licensed": 3201,
-            "sorned": 656
+            "sorned": 656,
+            "test": 252
         }, {
             "period": "2012-09-10",
             "licensed": 3215,
-            "sorned": 622
+            "sorned": 622,
+            "test": 252
         }];
         Morris.Line({
             element: 'morris_line_graph',
             data: day_data,
             resize: true,
             xkey: 'period',
-            ykeys: ['licensed', 'sorned'],
-            labels: ['Licensed', 'SORN'],
-            lineColors: ['#673AB7', '#3F51B5'],
+            ykeys: ['licensed', 'sorned', 'test'],
+            labels: ['Licensed', 'SORN', 'test'],
+            lineColors: ['#673AB7', '#3F51B5', '#cccccc'],
             pointFillColors: ['#E91E63']
 
         });
